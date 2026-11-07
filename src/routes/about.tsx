@@ -36,14 +36,14 @@ const journey = [
 
 function AboutCode() {
   return (
-    <div className="overflow-hidden rounded-lg border border-line bg-night/70 font-mono text-[13px] shadow-inner">
+    <div className="overflow-hidden rounded-lg border border-line bg-night/70 font-mono text-xs shadow-inner sm:text-[13px]">
       <div className="flex items-center gap-1.5 border-b border-line/70 px-3 py-2">
         <span className="size-2.5 rounded-full bg-pink" />
         <span className="size-2.5 rounded-full bg-lemon" />
         <span className="size-2.5 rounded-full bg-mint" />
         <span className="ml-2 text-[11px] text-muted">about_me.py</span>
       </div>
-      <pre className="scrollbar-soft overflow-x-auto p-4 leading-relaxed">
+      <pre className="scrollbar-soft overflow-x-auto p-3 leading-relaxed sm:p-4">
         <code>
           <span className="text-lilac">class</span> <span className="text-sky">Developer</span>:{'\n'}
           {'    '}name = <span className="text-mint">"{site.name}"</span>
@@ -73,8 +73,8 @@ export function AboutPage() {
         software developer and student who loves the spot where software meets hardware.
       </PageTitle>
 
-      <div className="grid gap-8 md:grid-cols-[1.1fr_1fr]">
-        <div className="space-y-4 leading-relaxed text-[#c7d0e6]">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+        <div className="min-w-0 space-y-4 leading-relaxed text-[#c7d0e6]">
           <p>
             Right now I'm studying <b className="text-mint">Arduino</b>, <b className="text-sky">machine learning</b>{' '}
             and <b className="text-lemon">Python</b>. I like projects I can physically poke — a sensor reading data,
